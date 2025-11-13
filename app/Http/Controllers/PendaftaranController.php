@@ -141,7 +141,7 @@ class PendaftaranController extends Controller
             $transaction = new Transaksi_sunat();
             $transaction->pendaftaran_id = $pendaftaran->id;
             $transaction->mode = $request->mode;
-            $transaction->status = "disetujui";
+            // $transaction->status = "disetujui";
             $transaction->snap_token = $snapToken;
             $transaction->save();
             session(['pendaftaran' => $pendaftaran]);

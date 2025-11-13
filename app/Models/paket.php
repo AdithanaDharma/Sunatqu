@@ -19,5 +19,7 @@ class paket extends Model
     }
     protected $casts = [
         'harga' => 'float',
+        'bonus' => 'array',
+        'deskripsi' => 'array',
     ];
 }
